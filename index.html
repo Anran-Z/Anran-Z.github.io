@@ -1,23 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <title>我的个人网站</title>
+  <title>我的个人主页</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
-    h1 { color: #2c3e50; }
-    p { color: #34495e; }
-    a { color: #2980b9; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    img.avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 3px solid #3498db;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.2em;
+      color: #2c3e50;
+    }
+    p.tagline {
+      font-size: 1.1em;
+      color: #7f8c8d;
+      margin: 10px 0 20px;
+    }
+    .links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 18px;
+      border-radius: 8px;
+      background: #3498db;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .links a:hover {
+      background: #2c80b4;
+    }
+    .about {
+      text-align: left;
+      margin-top: 30px;
+      color: #34495e;
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
-  <h1>Hi There </h1>
-  <p> </p>
-  <p></p>
-  <p>
-    <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
-    <a href="https://www.linkedin.com/in/yourusername/" target="_blank">LinkedIn</a>
-  </p>
+  <div class="container">
+    <!-- 头像，可以换成你自己的照片 URL -->
+    <img src="https://via.placeholder.com/150" alt="头像" class="avatar">
+    
+    <!-- 标题 -->
+    <h1>你好，我是 Anran</h1>
+    <p class="tagline">数据分析师 | 商业智能 | 持续学习</p>
+    
+    <!-- 链接按钮 -->
+    <div class="links">
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/yourusername/" target="_blank">LinkedIn</a>
+      <a href="mailto:yourmail@example.com">Email</a>
+    </div>
+    
+    <!-- 简介 -->
+    <div class="about">
+      <h2>关于我</h2>
+      <p>我有 7 年汽车行业经验，目前在新西兰攻读商业分析硕士，并在零售行业担任商业分析师。我的兴趣方向包括数据可视化、供应链优化和策略分析。</p>
+      <p>这个网站将作为我的个人名片，未来我会在这里分享项目作品与学习笔记。</p>
+    </div>
+  </div>
 </body>
 </html>
